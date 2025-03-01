@@ -27,7 +27,7 @@ function setup() {
   }
   
   // Semilla de inicialización el patrón
-  let start = 5;
+  let start = 5; //esta tambien puede ser un valor para parametrizar en botón
   for (let i = Math.floor(cols/2) - start; i < Math.floor(cols/2) + start; i++) {
     for (let j = Math.floor(rows/2) - start; j < Math.floor(rows/2) + start; j++) {
       grid[i][j].b = 1;
@@ -77,7 +77,7 @@ function draw() {
   for (let x = 0; x < cols; x++) {
     for (let y = 0; y < rows; y++) {
       let c = grid[x][y].b * 255;
-      img.set(x, y, color(c, c, c));
+      img.set(x, y, color(c, c, c)); //Aqui los colores, se pueden tambier variar con botones para cambiar de blanco y negro
     }
   }
   img.updatePixels();
