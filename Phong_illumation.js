@@ -22,8 +22,8 @@ function draw() {
   pointLight(255, 255, 255, lightPos.x, lightPos.y, lightPos.z); // Luz puntual
 
   // 💡 Simular la luz moviéndose con el mouse
-  lightPos.x = map(mouseX, 0, width, -200, 200);
-  lightPos.y = map(mouseY, 0, height, -200, 200);
+  lightPos.x = map(mouseX, 0, width, -300, 200);
+  lightPos.y = map(mouseY, 0, height, -300, 200);
 
   // 🎨 Material para Phong Reflection
   ambientMaterial(80, 80, 80); // Color base
